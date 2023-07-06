@@ -1,0 +1,6 @@
+<h1>Url Shortener</h1>
+
+<%= form_with(model: @shortened_url, url: shortened_urls_path) do |form| %>
+  <%= form.text_field :original_url, placeholder: 'Enter URL', required: true %>
+  <%= form.submit 'Shorten Url' %>
+<% end %>
